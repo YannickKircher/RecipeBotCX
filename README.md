@@ -1,2 +1,1 @@
-# RecipeBotCX
-Chatbot with dialogflow CX
+Recipes (not used): https://eightportions.com/datasets/Recipes/#fn:1 <br>
