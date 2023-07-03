@@ -56,11 +56,9 @@ def main(request):
                                "example_user_id")
     
     #response
-    response = json_recipe_data(recipe_id,
+    return json_recipe_data(recipe_id,
                             into_message,
                             recipe_name,
                             recipe_ingredients,
                             recipe_instructions
                             )
-    print(response)
-    return response
