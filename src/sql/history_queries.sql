@@ -22,3 +22,9 @@ values("1232","test2","my_name","2021-02-15 9:55:12");
 delete 
 from `dialogflow-recipe-guide.chatbot.user_recipe_history` 
 where (user_id ="my_name");
+
+select recipe_name 
+from `dialogflow-recipe-guide.chatbot.user_recipe_history`
+where user_id ="my_name"
+order by entry_added desc 
+limit 4;
