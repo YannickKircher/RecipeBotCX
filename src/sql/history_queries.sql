@@ -1,4 +1,3 @@
-
 delete 
 from `dialogflow-recipe-guide.chatbot.user_recipe_history` 
 where (user_id ="my_name") and (entry_added < (

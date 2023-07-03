@@ -5,7 +5,7 @@ from configparser import ConfigParser
 
 # config
 config = ConfigParser()
-config.read("/home/lemmy/Workspace/dialogflowchatbot/SECRETS/secrets_recipe_bot.ini")
+config.read("/home/lemmy/Workspace/RecipeBotCX/SECRETS/secrets_recipe_bot.ini")
 MONGO_DB_PW = config["SECRETS"]["MONGO_DB_PW"]
 
 # mongo db init
