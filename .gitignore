@@ -1,4 +1,4 @@
 *.csv
 *.json
-*/data
-*/SECRETS
+/data
+/secrets
