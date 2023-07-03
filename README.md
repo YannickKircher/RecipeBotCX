@@ -17,7 +17,6 @@ https://dialogflow.cloud.google.com/cx
 <br>
 
 # What can the Chatbot do?
-
 ## Shortform 
 - give recipe recommendations bases on category
 - give recipe recommendations bases on name of the recipe
@@ -65,7 +64,7 @@ It was also assumed that the chatbot would be a standalone Project. This is one 
 
 # Recipe data (MongoDB Atlas)
 
-The recipes are mostly or entirely american (also containing imperial measurements) <br>
+The recipes are mostly or entirely american (containing imperial measurements) <br>
 The recipe data was saved in a database collection in MongoDB Atlas. This makes querying the data, which is in json format very easy.
 The Json format was chosen, first and foremost because the original data was in json format. But also because it contains multiple array fields, like ingredients and directions. Querying those fields in MongoDB works very well. 
 
@@ -92,7 +91,7 @@ Recipes : https://eightportions.com/datasets/Recipes/#fn:1<br>
 In the history the last four recipes, that a specific user viewed are saved.<br>
 The history works by saving up to four entries per user. The entries are identified by there "user_id" and a "datetime". When inserting a new recipe into the History, all entry that are older then the top four are deletes for that specific user.
 
-Please note, that it is possible to have more than four entries per user. This is because the queries for inserting and deleting new entries are run at the same time. The webhook does not wait for them to finish, this would slow down the answer time of the bot and intern would decrease the user experience. 
+Please note, that it is possible to have more than four entries per user. This is because the queries for inserting and deleting new entries are run at the same time. The webhook does not wait for them to finish, this would slow down the answer time of the bot and intern would decrease the UX. 
 
 | name        | type       | description                                                                  |
 |-------------|------------|------------------------------------------------------------------------------|
@@ -107,11 +106,12 @@ Please note, that it is possible to have more than four entries per user. This i
 
 <strong> In short, it does not really exist! </strong>
 
-However the history works by saving up to 4 entries per user. The entries are identified by there "user_id" and a timestamp. When inserting a new recipe into the History, all entry that are older then the top 4 are deletes for that specific user.
+However the history works by saving up to 4 entries per user. The entries are identified by there "user_id" and a timestamp. 
+
 For every entry in the BigQuery table of the recipe history, the same "user_id" is used ("example_user_id"). This means that there are only history items for one user. <br>
-The goal of this project was not to build a implementation ready chatbot. It serves more like a concept. This is why no BigQuery table containing user data was.<br>
+The goal of this project was not to build a implementation ready chatbot. It serves more like a concept. This is why no BigQuery table containing user data was created/generated.<br>
 Please note, that I am not aware of any possibility to provide Dialogflow CX (without integration) with data, that is not given in a text request, like a user_id. which would be necessary to query a database.<br>
-If the bot was integrated into a system, we could have the user login and get the user_id.<br>
+If the bot was integrated into a system, the user could login and the system would get the user_id this way.<br>
 
 <br>
 
