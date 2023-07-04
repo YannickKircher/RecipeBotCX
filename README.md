@@ -1,13 +1,13 @@
 # 1. Chatbot development using Dialogflow CX, GCP and Atlas (JUNE/JULY/AUGUST 2023)
 
-In this Project a chatbot is developed using: 
+In this project a chatbot is developed using: 
 - Dialogflow CX
 - GCP Cloud Functions (python, functioning as webhooks)
 - GCP BigQuery
 - MongoDB Atlas  
 
-The Chatbot can recommend recipes to the user based on ingredients, that are left in the users fridge or pantry.
-This way those ingredients ([eggs, banana]) don't go to waste. The Bot can also recommend recipes based on the name (lasagna) or the category (vegan).
+The chatbot can recommend recipes to the user based on ingredients, that are left in the users fridge or pantry.
+This way those ingredients ([eggs, banana]) don't go to waste. The bot can also recommend recipes based on the name (lasagna) or the category (vegan).
 
 The recommended recipes are being displayed to the user with the name of the recipe, list of ingredients and the instructions to make the recipe. 
 
@@ -66,7 +66,8 @@ It was also assumed that the chatbot would be a standalone Project. This is one 
 
 The recipes are mostly or entirely american (containing imperial measurements) <br>
 The recipe data was saved in a database collection in MongoDB Atlas. This makes querying the data, which is in json format very easy.
-The Json format was chosen, first and foremost because the original data was in json format. But also because it contains multiple array fields, like ingredients and directions. Querying those fields in MongoDB works very well. 
+The Json format was chosen, first and foremost because the original data was in json format. 
+But also because it contains multiple array fields, like ingredients and directions. 
 
 | name        | type       | description                                                                  |
 |-------------|------------|------------------------------------------------------------------------------|
