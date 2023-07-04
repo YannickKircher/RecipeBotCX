@@ -9,7 +9,7 @@ In this Project a chatbot is developed using:
 The Chatbot can recommend recipes to the user based on ingredients, that are left in the users fridge or pantry.
 This way those ingredients ([eggs, banana]) don't go to waste. The Bot can also recommend recipes based on the name (lasagna) or the category (vegan).
 
-The recommend recipes are being displayed to the user with the name of the recipe, list of ingredients and the instructions to make the recipe. 
+The recommended recipes are being displayed to the user with the name of the recipe, list of ingredients and the instructions to make the recipe. 
 
 The dialogflow chatbot was/is not integrated with any system, it was tested with the test console, available at: <br>
 https://dialogflow.cloud.google.com/cx
