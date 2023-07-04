@@ -1,8 +1,12 @@
 def history_add_new_entry(client,db_table_to_query,recipe_id,recipe_name,user_id,timestamp):
     insert_query = f"""
-            insert
-            into {db_table_to_query}
-            values("{recipe_id}","{recipe_name}","{user_id}", "{timestamp}")"""
+    insert into {db_table_to_query} (recipe_id,recipe_name,user_id,entry_added)
+    select * from (select "{recipe_id}","{recipe_name}","{user_id}",datetime("{timestamp}")) AS tmp
+    where not exists (
+        select 1 from {db_table_to_query} where recipe_id = "{recipe_id}" and user_id = "{user_id}"
+    ) limit 1;
+    """
+
     return client.query(insert_query)
 
 def history_delete_old_entries(client,db_table_to_query,user_id):

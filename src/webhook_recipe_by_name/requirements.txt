@@ -1,3 +1,0 @@
-pymongo
-numpy
-google-cloud-bigquery
