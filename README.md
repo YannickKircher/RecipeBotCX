@@ -53,7 +53,7 @@ It was also assumed that the chatbot would be a standalone Project. This is one 
 
 # Chatbot structure in Dialogflow CX
 ### Stats
-- 4 Flows
+- 5 Flows
 - 20 Intents 
 - 4 Webhooks
 
