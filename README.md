@@ -72,7 +72,7 @@ It was also assumed that the chatbot would be a standalone Project. This is one 
 
 <br>
 
-# 3. How does the architecture look like
+# 3. How does the architecture look like?
 
 ![plot](diagrams/architecture.png)
 
