@@ -109,10 +109,15 @@ Please note, that it is possible to have more than four entries per user. This i
 
 However the history works by saving up to 4 entries per user. The entries are identified by there "user_id" and a timestamp. 
 
-For every entry in the BigQuery table of the recipe history, the same "user_id" is used ("example_user_id"). This means that there are only history items for one user. <br>
+For every entry in the BigQuery table of the recipe history, the same "user_id" is used ("example_user_id"). This means that there are only entries for one user. <br>
 The goal of this project was not to build a implementation ready chatbot. It serves more like a concept. This is why no BigQuery table containing user data was created/generated.<br>
 Please note, that I am not aware of any possibility to provide Dialogflow CX (without integration) with data, that is not given in a text request, like a user_id. which would be necessary to query a database.<br>
 If the bot was integrated into a system, the user could login and the system would get the user_id this way.<br>
+
+## Optimal BigQuery structure
+
+![plot](optimal_bigQuery.png)
+
 
 <br>
 
