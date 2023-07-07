@@ -17,7 +17,7 @@ https://dialogflow.cloud.google.com/cx
 <br>
 
 # What can the Chatbot do?
-## Shortform 
+
 - give recipe recommendations bases on category
 - give recipe recommendations bases on name of the recipe
 - give recipe recommendations bases on ingredients to be used
@@ -39,8 +39,6 @@ https://dialogflow.cloud.google.com/cx
 
 <br>
 
-## In depth explanation and diagrams
-
 During the development the user experience(UX) was one of the key factory for the design.
 For this, multiple people were consulted on the problems that they are having, when looking up recipes on the internet.
 It was also assumed that the chatbot would be a standalone Project. This is one of the reasons, why the history was implemented in the flow.
@@ -53,11 +51,30 @@ It was also assumed that the chatbot would be a standalone Project. This is one 
 
 ## TODO
 
+# Chatbot structure in Dialogflow CX
+### Stats
+- 4 Flows
+- 20 Intents 
+- 4 Webhooks
+
+## Default Start Flow
+![plot](DefaultStartFlow.png)
+## Recipe
+![plot](Recipe.png)
+## Recipe History
+![plot](RecipeHistory.png)
+
+| Shopping List                  | Convert Measurement               |
+|--------------------------------|-----------------------------------|
+| ![plot](ShoppingList.png)      | ![plot](ConvertMeasurement.png)   |
+
+| Shopping List                  | Convert Measurement               | Recipe History              |
+|--------------------------------|-----------------------------------|-----------------------------|
+| ![plot](ShoppingList.png)      | ![plot](ConvertMeasurement.png)   | ![plot](RecipeHistory.png)  |
 <br>
 
 # 3. How does the architecture look like
 
-## TODO (not final)
 ![plot](architecture.png)
 
 <br>
@@ -114,10 +131,11 @@ The goal of this project was not to build a implementation ready chatbot. It ser
 Please note, that I am not aware of any possibility to provide Dialogflow CX (without integration) with data, that is not given in a text request, like a user_id. which would be necessary to query a database.<br>
 If the bot was integrated into a system, the user could login and the system would get the user_id this way.<br>
 
-## Optimal BigQuery structure
+### Optimal BigQuery structure
 
 ![plot](optimal_bigQuery.png)
 
+Note, that the user_id could also be replaced by user_email. 
 
 <br>
 
@@ -131,5 +149,6 @@ If the bot was integrated into a system, the user could login and the system wou
 ## TODO
 - more features
 - collaboration is possible (webhook and chatbot)
+- feature sunset july 2023
 
 <br>
