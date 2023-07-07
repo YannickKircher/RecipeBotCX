@@ -1,3 +1,4 @@
+#delete old history entries
 delete 
 from `dialogflow-recipe-guide.chatbot.user_recipe_history` 
 where user_id ="example_user_id" and entry_added < (

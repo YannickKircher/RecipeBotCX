@@ -43,36 +43,38 @@ During the development the user experience(UX) was one of the key factory for th
 For this, multiple people were consulted on the problems that they are having, when looking up recipes on the internet.
 It was also assumed that the chatbot would be a standalone Project. This is one of the reasons, why the history was implemented in the flow.
 
-## TODO
-
 <br>
 
-## How does a response look like? 
+## How could a conversations look like?
 
-## TODO
+| User wants a new recipe             | User wants recipe from history           |
+|-------------------------------------|------------------------------------------|
+| ![plot](diagrams/welcome.png)       | ![plot](diagrams/show_history.png)       |
+| ![plot](diagrams/recipe_how.png)    | ![plot](diagrams/show_recipe_history.png)|
+| ![plot](diagrams/recipe_name.png)   |                                          |
+| ![plot](diagrams/recipe_show.png)   |                                          |
+| ![plot](diagrams/recipe_confirm.png)|                                          |
 
 # Chatbot structure in Dialogflow CX
-### Stats
-- 5 Flows
-- 20 Intents 
-- 4 Webhooks
+
+### Most of the "end flow", "end session", and some changes to other flows where not modeled, because it made the diagrams confusing.
 
 ## Default Start Flow
-![plot](DefaultStartFlow.png)
+![plot](diagrams/DefaultStartFlow.png)
 ## Recipe
-![plot](Recipe.png)
+![plot](diagrams/Recipe.png)
 ## Recipe History
-![plot](RecipeHistory.png)
+![plot](diagrams/RecipeHistory.png)
 
-| Shopping List                  | Convert Measurement               |
-|--------------------------------|-----------------------------------|
-| ![plot](ShoppingList.png)      | ![plot](ConvertMeasurement.png)   |
+| Shopping List                     | Convert Measurement                     |
+|-----------------------------------|-----------------------------------------|
+| ![plot](diagrams/ShoppingList.png)| ![plot](diagrams/ConvertMeasurement.png)|
 
 <br>
 
 # 3. How does the architecture look like
 
-![plot](architecture.png)
+![plot](diagrams/architecture.png)
 
 <br>
 
@@ -130,7 +132,7 @@ If the bot was integrated into a system, the user could login and the system wou
 
 ### Optimal BigQuery structure
 
-![plot](optimal_bigQuery.png)
+![plot](diagrams/optimal_bigQuery.png)
 
 Note, that the user_id could also be replaced by user_email. 
 
