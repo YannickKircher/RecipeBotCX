@@ -68,9 +68,6 @@ It was also assumed that the chatbot would be a standalone Project. This is one 
 |--------------------------------|-----------------------------------|
 | ![plot](ShoppingList.png)      | ![plot](ConvertMeasurement.png)   |
 
-| Shopping List                  | Convert Measurement               | Recipe History              |
-|--------------------------------|-----------------------------------|-----------------------------|
-| ![plot](ShoppingList.png)      | ![plot](ConvertMeasurement.png)   | ![plot](RecipeHistory.png)  |
 <br>
 
 # 3. How does the architecture look like
