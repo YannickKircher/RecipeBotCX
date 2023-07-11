@@ -42,6 +42,7 @@ https://dialogflow.cloud.google.com/cx
 During the development the user experience(UX) was one of the key factory for the design.
 For this, multiple people were consulted on the problems that they are having, when looking up recipes on the internet.
 It was also assumed that the chatbot would be a standalone Project. This is one of the reasons, why the history was implemented in the flow.
+Please note, that the Shopping list was an afterthought, and does not play into the "standalone project" idear.
 
 <br>
 
