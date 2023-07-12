@@ -18,13 +18,13 @@ https://dialogflow.cloud.google.com/cx
 
 # What can the Chatbot do?
 
-- give recipe recommendations bases on category (ni : category not in recipe data)
+- give recipe recommendations bases on category
 - give recipe recommendations bases on name of the recipe 
 - give recipe recommendations bases on ingredients to be used
 - give random recipe recommendations
-    - convert measurements of the recommended recipe (cup to g / oz to ml) (ni : whould need to extrace mesurements from text feelds , this whould need a language model for this)
+    - convert measurements of the recommended recipe (cup to g / oz to ml)
     - change portion of the recipe (ni : whould need to extrace mesurements from text feelds , this whould need a language model for this)
-    - add the ingredients of the recipe to a shopping list (ni : whould need to extrace mesurements from text feelds , this whould need a language model for this)
+    - add the ingredients of the recipe to a shopping list
     - reroll, to show another recipe that matches the query 
 
 <br>
