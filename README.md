@@ -18,13 +18,13 @@ https://dialogflow.cloud.google.com/cx
 
 # What can the Chatbot do?
 
-- give recipe recommendations bases on category
-- give recipe recommendations bases on name of the recipe
+- give recipe recommendations bases on category (ni : category not in recipe data)
+- give recipe recommendations bases on name of the recipe 
 - give recipe recommendations bases on ingredients to be used
 - give random recipe recommendations
-    - convert measurements of the recommended recipe (cup to g / oz to ml)
-    - change portion of the recipe
-    - add the ingredients of the recipe to a shopping list
+    - convert measurements of the recommended recipe (cup to g / oz to ml) (ni : whould need to extrace mesurements from text feelds , this whould need a language model for this)
+    - change portion of the recipe (ni : whould need to extrace mesurements from text feelds , this whould need a language model for this)
+    - add the ingredients of the recipe to a shopping list (ni : whould need to extrace mesurements from text feelds , this whould need a language model for this)
     - reroll, to show another recipe that matches the query 
 
 <br>
@@ -141,14 +141,22 @@ Note, that the user_id could also be replaced by user_email.
 
 # What would make the chatbot better?
 
-## TODO
+Currently, the chatbot is not able to convert measurements from one unit to another (e.g., cup to g, oz to ml).
+This functionality would require extracting measurements from text fields, which would need a language model specifically trained for this task. 
+Similarly, the chatbot also doesn't support changing the portion size of a recipe or adding the ingredients to a shopping list. 
+While it might be possible to extract the measurements using brute force, I anticipate that this approach would be prone to mistakes.
+
+The querying by category is currently not implemented in the chatbot due to the absence of category information in the recipe data.
+However, it might be possible to infer certain categories based on the ingredients of a recipe, such as identifying recipes as 'vegan' based on the absence of animal products.
+Additionally, it should be noted that some recipes could also be made 'vegan' by substituting certain ingredients.
 
 <br>
 
 # Why use Dialogflow CX and not Dialogflow ES
-## TODO
-- more features
-- collaboration is possible (webhook and chatbot)
-- feature sunset july 2023
+
+- More features: Dialogflow CX offers more advanced features compared to Dialogflow ES. It provides enhanced capabilities for building complex conversational flows and managing stateful conversations.
+- Better graphs: Dialogflow CX provides improved visual representation of conversation flows through its graph-based interface. This makes it easier to design and understand the structure of conversations.
+- Better collaboration capabilities: While collaboration is possible in both Dialogflow ES and CX, collaboration in Dialogflow CX is enhanced by the fact that developers can write and test webhook code simultaneously.
+  In ES, it is only possible to use one webhook.
 
 <br>
