@@ -159,4 +159,8 @@ Additionally, it should be noted that some recipes could also be made 'vegan' by
 - Better collaboration capabilities: While collaboration is possible in both Dialogflow ES and CX, collaboration in Dialogflow CX is enhanced by the fact that developers can write and test webhook code simultaneously.
   In ES, it is only possible to use one webhook.
 
+It is also worth noting that Dialogflow ES offers a free tier with limited usage, while Dialogflow CX is a paid service.
+However, Dialogflow CX provides a free trial with a $600 credit that is valid for one year.
+It's important to mention that Cloud Functions, used as a webhooks, are not included in either version's trial.
+
 <br>
