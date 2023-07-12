@@ -161,6 +161,6 @@ Furthermore, some recipes could also be made 'vegan' by substituting certain ing
 
 It is also worth noting that Dialogflow ES offers a free tier with limited usage, while Dialogflow CX is a paid service.
 However, Dialogflow CX provides a free trial with a $600 credit that is valid for one year.
-It's important to mention that Cloud Functions, used as a webhooks, are not included in either version's trial.
+It's important to mention that Cloud Functions, used as a webhooks, are not included in either version's trial. (if you want to use python, ES has one for JS) 
 
 <br>
