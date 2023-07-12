@@ -144,11 +144,11 @@ Note, that the user_id could also be replaced by user_email.
 Currently, the chatbot is not able to convert measurements from one unit to another (e.g., cup to g, oz to ml).
 This functionality would require extracting measurements from text fields, which would need a language model specifically trained for this task. 
 Similarly, the chatbot also doesn't support changing the portion size of a recipe or adding the ingredients to a shopping list. 
-While it might be possible to extract the measurements using brute force, I anticipate that this approach would be prone to mistakes.
+While it might be possible to extract the measurements using brute force, there is a risk of potential mistakes.
 
 The querying by category is currently not implemented in the chatbot due to the absence of category information in the recipe data.
 However, it might be possible to infer certain categories based on the ingredients of a recipe, such as identifying recipes as 'vegan' based on the absence of animal products.
-Additionally, it should be noted that some recipes could also be made 'vegan' by substituting certain ingredients.
+Furthermore, some recipes could also be made 'vegan' by substituting certain ingredients.
 
 <br>
 
